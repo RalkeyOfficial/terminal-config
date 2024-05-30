@@ -18,6 +18,8 @@ Along with a installation guide.
     - [Linux Debian (Only if you installed WSL)](#linux-debian-only-if-you-installed-wsl)
 - [Step 2: Installing the right font](#step-2-installing-the-right-font)
 - [Step 3: Setting up the Terminal](#step-3-setting-up-the-terminal)
+  - [Installing settings.json](#installing-settingsjson)
+  - [Remove logo from Powershell](#remove-logo-from-powershell)
 - [Step 4: setting up starship](#step-4-setting-up-starship)
   - [Windows](#windows)
     - [Powershell](#powershell-1)
@@ -77,6 +79,7 @@ I went for "CaskaydiaMono Nerd Font". [[click to download]](https://github.com/r
 
 ## Step 3: Setting up the Terminal
 
+### Installing settings.json
 Open up the Terminal and go to the settings (`ctrl` + `,`), at the bottom-left click on `Open JSON file`. <br>
 In there delete everything and paste in the settings from [settings.json](terminal/settings.json) (or only replace the schemes). <br>
 Now save this file (do not press save in the Terminal itself) and reopen the Terminal.
@@ -84,6 +87,7 @@ Now save this file (do not press save in the Terminal itself) and reopen the Ter
 Go back to settings and under Profiles click "Default", Then go to "Appearance". <br>
 Verify that the Color scheme is set to `Sexy Mama` and the Font is set to `CaskaydiaMono Nerd Font`.
 
+### Remove logo from Powershell
 Then go to the "PowerShell" profile and add ` -nologo` at the end of the Command line.
 
 Make sure to press Save.
