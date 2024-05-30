@@ -43,7 +43,7 @@ To install PowerShell, open the Microsoft Store, search for "PowerShell", and in
 Alternatively, you can use [this link](https://www.microsoft.com/store/productId/9MZ1SNWT0N5D?ocid=pdpshare).
 
 ### WSL Debian (Optional)
-*Only recommended if you have Linux experience.*  
+⚠*Only recommended if you have Linux experience.*⚠
 Open PowerShell as Administrator and run the following command:
 ```powershell
 wsl --install -d Debian
