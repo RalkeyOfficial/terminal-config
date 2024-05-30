@@ -8,137 +8,141 @@ Along with a installation guide.
 ---
 
 ## Table of contents: <!-- omit from toc -->
-- [step 1: installing the right apps](#step-1-installing-the-right-apps)
+- [Step 1: Installing the Right Apps](#step-1-installing-the-right-apps)
   - [Terminal](#terminal)
-  - [Powershell](#powershell)
-  - [WSL Debian (optional)](#wsl-debian-optional)
+  - [PowerShell](#powershell)
+  - [WSL Debian (Optional)](#wsl-debian-optional)
   - [Starship](#starship)
     - [Windows (With Chocolatey)](#windows-with-chocolatey)
     - [Windows (Without Chocolatey)](#windows-without-chocolatey)
-    - [Linux Debian (Only if you installed WSL)](#linux-debian-only-if-you-installed-wsl)
-- [Step 2: Installing the right font](#step-2-installing-the-right-font)
-- [Step 3: Setting up the Terminal](#step-3-setting-up-the-terminal)
-  - [Installing settings.json](#installing-settingsjson)
-  - [Remove logo from Powershell](#remove-logo-from-powershell)
-- [Step 4: setting up starship](#step-4-setting-up-starship)
+    - [Linux Debian (If WSL is Installed)](#linux-debian-if-wsl-is-installed)
+- [Step 2: Installing the Right Font](#step-2-installing-the-right-font)
+- [Step 3: Setting Up the Terminal](#step-3-setting-up-the-terminal)
+  - [Installing `settings.json`](#installing-settingsjson)
+  - [Remove Logo from PowerShell](#remove-logo-from-powershell)
+- [Step 4: Setting Up Starship](#step-4-setting-up-starship)
   - [Windows](#windows)
-    - [Powershell](#powershell-1)
+    - [Create Configuration Folder](#create-configuration-folder)
+    - [PowerShell](#powershell-1)
     - [Command Prompt](#command-prompt)
   - [Debian](#debian)
+    - [Modify `.bashrc`](#modify-bashrc)
+    - [Create Starship Configuration](#create-starship-configuration)
 
 
 ---
 
-## step 1: installing the right apps
+## Step 1: Installing the Right Apps
 
 ### Terminal
-Open up the Microsoft Store and search for "Windows Terminal", then install. <br>
-Alternatively you can follow [this link.](https://www.microsoft.com/store/productId/9N0DX20HK701?ocid=pdpshare)
+To install Windows Terminal, open the Microsoft Store, search for "Windows Terminal", and install it. <br>
+Alternatively, you can use [this link](https://www.microsoft.com/store/productId/9N0DX20HK701?ocid=pdpshare).
 
-### Powershell
-Open up the Microsoft Store and search for "Powershell", then install. <br>
-Alternatively you can follow [this link.](https://www.microsoft.com/store/productId/9MZ1SNWT0N5D?ocid=pdpshare)
+### PowerShell
+To install PowerShell, open the Microsoft Store, search for "PowerShell", and install it. <br>
+Alternatively, you can use [this link](https://www.microsoft.com/store/productId/9MZ1SNWT0N5D?ocid=pdpshare).
 
-### WSL Debian (optional)
-*This is only recommended if you have Linux experience.* <br>
-Open Powershell as Administrator and type in the following command.
+### WSL Debian (Optional)
+*Only recommended if you have Linux experience.*  
+Open PowerShell as Administrator and run the following command:
 ```powershell
 wsl --install -d Debian
 ```
-Then go through the setup steps on Debian.
+Follow the setup steps for Debian.
 
 ### Starship
+
 #### Windows (With [Chocolatey](https://chocolatey.org/))
-Open up CMD as Administrator and type in the following command
+Open CMD as Administrator and run:
 ```powershell
 choco install starship
 ```
 
 #### Windows (Without [Chocolatey](https://chocolatey.org/))
-Download and install the latest MSI-installer from their [releases on github](https://github.com/starship/starship/releases/latest)
+Download and install the latest MSI installer from their [GitHub releases](https://github.com/starship/starship/releases/latest).
 
-#### Linux Debian (Only if you installed WSL)
-Open up WSL and start by updating the system with the following command:
+#### Linux Debian (If WSL is Installed)
+Open WSL and update the system:
 ```bash
 sudo apt update && sudo apt upgrade
 ```
-Then install `curl`:
+Then, install `curl`:
 ```bash
 sudo apt install curl
 ```
-
-When that is done install Starship with this command
+Finally, install Starship:
 ```bash
 curl -sS https://starship.rs/install.sh | sh
 ```
 
-## Step 2: Installing the right font
+## Step 2: Installing the Right Font
 
-Go to [nerdfonts.com](https://www.nerdfonts.com/font-downloads) and pick out a font you like. <br>
-I went for "CaskaydiaMono Nerd Font". [[click to download]](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/CascadiaMono.zip)
+Visit [nerdfonts.com](https://www.nerdfonts.com/font-downloads) and choose a font you like. <br>
+For example, I use [CaskaydiaMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/CascadiaMono.zip).
 
-## Step 3: Setting up the Terminal
+## Step 3: Setting Up the Terminal
 
-### Installing settings.json
-Open up the Terminal and go to the settings (`ctrl` + `,`), at the bottom-left click on `Open JSON file`. <br>
-In there delete everything and paste in the settings from [settings.json](terminal/settings.json) (or only replace the schemes). <br>
-Now save this file (do not press save in the Terminal itself) and reopen the Terminal.
+### Installing `settings.json`
+1. Open Terminal and navigate to settings (`Ctrl` + `,`).
+2. At the bottom-left, click on `Open JSON file`.
+3. Delete the existing content and replace it with the settings from [settings.json](terminal/settings.json).
+4. Save the file and reopen the Terminal.
 
-Go back to settings and under Profiles click "Default", Then go to "Appearance". <br>
-Verify that the Color scheme is set to `Sexy Mama` and the Font is set to `CaskaydiaMono Nerd Font`.
+Go back to settings, select Profiles, click "Default", and go to "Appearance". <br>
+Ensure the Color scheme is set to `Sexy Mama` and the Font is set to `CaskaydiaMono Nerd Font`.
 
-### Remove logo from Powershell
-Then go to the "PowerShell" profile and add ` -nologo` at the end of the Command line.
-
+### Remove Logo from PowerShell
+In the "PowerShell" profile, add `-nologo` at the end of the Command line. <br>
 Make sure to press Save.
 
-## Step 4: setting up starship
+## Step 4: Setting Up Starship
 
 ### Windows
-Go to you user folder by pressing `windows key` + `r`, then type in `%userprofile%` and press Enter, <br>
-and make a folder in there called `.config`. <br>
-Download the [starship.toml](starship/starship.toml) file to that folder.
 
-#### Powershell
-Using [VScode](https://code.visualstudio.com/), open the `$PROFILE` by typing in:
+#### Create Configuration Folder
+Press `Windows key` + `R`, type `%userprofile%`, and press Enter. <br>
+Create a folder named `.config` in your user directory. <br>
+Download the [starship.toml](starship/starship.toml) file to this folder. <br>
+
+#### PowerShell
+Open the PowerShell profile in VSCode:
 ```powershell
 code $PROFILE
 ```
-And at the end of the file paste in:
+Add the following line at the end of the file:
 ```powershell
 Invoke-Expression (&starship init powershell)
 ```
 
 #### Command Prompt
-Install [Clink](https://github.com/chrisant996/clink/releases/latest) by downloading and installing the setup file from Github.
-
-Using [VScode](https://code.visualstudio.com/), open a `clink\starship.lua` file by typing in:
+1. Install [Clink](https://github.com/chrisant996/clink/releases/latest) from GitHub.
+2. Open a `clink\starship.lua` file in VSCode:
 ```powershell
 code %LocalAppData%\clink\starship.lua
 ```
-And at the end of the file paste in:
+Add the following line at the end of the file:
 ```batch
 load(io.popen('starship init cmd'):read("*a"))()
 ```
-
-Then Save that file.
+Save the file.
 
 ### Debian
 
-Open up `.bashrc` in NANO by typing in:
+#### Modify `.bashrc`
+Open `.bashrc` in NANO:
 ```bash
 nano ~/.bashrc
 ```
-Move down with the arrow keys and at the end of the file paste in:
+Scroll to the end of the file and add:
 ```bash
 eval "$(starship init bash)"
 ```
+Save the file (`Ctrl` + `S`) and exit NANO (`Ctrl` + `X`).
 
-save the file by pressing `ctrl` + `s` and close NANO by pressing `ctrl` + `x`.
-
-Then open up a new file by typing:
+#### Create Starship Configuration
+Open a new file in NANO:
 ```bash
 nano ~/.config/starship.toml
 ```
-And past in the contents from [starship.toml](starship/starship.toml).
-
+Paste the contents from [starship.toml](starship/starship.toml). <br>
+Save and close the file as before.
