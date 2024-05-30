@@ -1,4 +1,4 @@
-# Terminal setup
+# Terminal setup <!-- omit from toc -->
 
 My current setup for the terminal on Windows.
 Along with a installation guide.
@@ -7,24 +7,23 @@ Along with a installation guide.
 
 ---
 
-## Table of contents:
-- [Terminal setup](#terminal-setup)
-  - [Table of contents:](#table-of-contents)
-  - [step 1: installing the right apps](#step-1-installing-the-right-apps)
-    - [Terminal](#terminal)
-    - [Powershell](#powershell)
-    - [WSL Debian (optional)](#wsl-debian-optional)
-    - [Starship](#starship)
-      - [Windows (With Chocolatey)](#windows-with-chocolatey)
-      - [Windows (Without Chocolatey)](#windows-without-chocolatey)
-      - [Linux Debian (Only if you installed WSL)](#linux-debian-only-if-you-installed-wsl)
-  - [Step 2: Installing the right font](#step-2-installing-the-right-font)
-  - [Step 3: Setting up the Terminal](#step-3-setting-up-the-terminal)
-  - [Step 4: setting up starship](#step-4-setting-up-starship)
-    - [Windows](#windows)
-      - [Powershell](#powershell-1)
-      - [Command Prompt](#command-prompt)
-    - [Debian](#debian)
+## Table of contents: <!-- omit from toc -->
+- [step 1: installing the right apps](#step-1-installing-the-right-apps)
+  - [Terminal](#terminal)
+  - [Powershell](#powershell)
+  - [WSL Debian (optional)](#wsl-debian-optional)
+  - [Starship](#starship)
+    - [Windows (With Chocolatey)](#windows-with-chocolatey)
+    - [Windows (Without Chocolatey)](#windows-without-chocolatey)
+    - [Linux Debian (Only if you installed WSL)](#linux-debian-only-if-you-installed-wsl)
+- [Step 2: Installing the right font](#step-2-installing-the-right-font)
+- [Step 3: Setting up the Terminal](#step-3-setting-up-the-terminal)
+- [Step 4: setting up starship](#step-4-setting-up-starship)
+  - [Windows](#windows)
+    - [Powershell](#powershell-1)
+    - [Command Prompt](#command-prompt)
+  - [Debian](#debian)
+
 
 ---
 
