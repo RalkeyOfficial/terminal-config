@@ -19,20 +19,21 @@ $java\
 $kotlin\
 $haskell\
 $python\
-[](fg:color_language bg:color_bg3)\
+[](fg:color_language bg:color_bg2)\
 $docker_context\
 $conda\
-[](fg:color_bg3 bg:color_bg1)\
+[](fg:color_bg2 bg:color_bg1)\
 $time\
 [ ](fg:color_bg1)\
-$line_break$character(fg:color_purple)"""
+$line_break$character(fg:color_purple)
+"""
 
-palette = 'gruvbox_dark'
+palette = 'sexy_mama'
 
-[palettes.gruvbox_dark]
+[palettes.sexy_mama]
 color_fg0 = '#fbf1c7'
 color_bg1 = '#3c3836'
-color_bg3 = '#665c54'
+color_bg2 = '#665c54'
 color_blue = '#458588'
 color_aqua = '#689d6a'
 color_green = '#98971a'
@@ -45,6 +46,7 @@ color_os_username = '#7129FF'
 color_directory = '#905AFF'
 color_git_branch = '#685AFF'
 color_language = '#3D2AFF'
+color_python = '#2B4FFF'
 
 [os]
 disabled = false
@@ -83,12 +85,12 @@ format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = "󰝚 "
-"Pictures" = " "
-"Developer" = "󰲋 "
+# [directory.substitutions]
+# "Documents" = "󰈙 "
+# "Downloads" = " "
+# "Music" = "󰝚 "
+# "Pictures" = " "
+# "Developer" = "󰲋 "
 
 [git_branch]
 symbol = ""
@@ -143,6 +145,7 @@ format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_language)]($style)'
 symbol = ""
 style = "bg:color_language"
 format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_language)]($style)'
+pyenv_version_name = true
 
 [docker_context]
 symbol = ""
