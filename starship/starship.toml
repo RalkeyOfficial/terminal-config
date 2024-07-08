@@ -25,7 +25,7 @@ $conda\
 [](fg:color_bg2 bg:color_bg1)\
 $time\
 [ ](fg:color_bg1)\
-$line_break$character(fg:color_purple)
+$line_break$character(fg:color_purple)\
 """
 
 palette = 'sexy_mama'
