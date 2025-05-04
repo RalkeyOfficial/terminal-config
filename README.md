@@ -147,6 +147,7 @@ Save the file (`Ctrl` + `S`) and exit NANO (`Ctrl` + `X`).
 #### Create Starship Configuration
 Open a new file in NANO:
 ```bash
+mkdir -p ~/.config
 nano ~/.config/starship.toml
 ```
 Paste the contents from [starship.toml](starship/starship.toml). <br>
