@@ -126,6 +126,11 @@ load(io.popen('starship init cmd'):read("*a"))()
 ```
 Save the file.
 
+To remove the Clink starting text run this command
+```
+clink autorun install -- --quiet
+```
+
 ### Debian
 
 #### Modify `.bashrc`
